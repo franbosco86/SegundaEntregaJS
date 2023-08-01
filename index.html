@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruleta de apuestas</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Ruleta de Apuestas</h1>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" placeholder="Ingrese su nombre">
+
+        <label for="monto">Monto de la apuesta:</label>
+        <input type="number" id="monto" placeholder="Ingrese el monto de su apuesta">
+
+        <button onclick="realizarApuesta()">Realizar Apuesta</button>
+        <h2>Resumen de Apuestas:</h2>
+        <textarea id="resumenApuestas" readonly></textarea>
+
+        <button onclick="mostrarGanancias()">Mostrar Ganancias</button>
+        <button onclick="mostrarPerdidas()">Mostrar Perdidas</button>
+    </div>
+
+
+
+    <script src="app/app.js"></script>
+</body>
+
+</html>
